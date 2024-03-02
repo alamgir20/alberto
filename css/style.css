@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+    width: 100%;
+    background: #1C2B57;
+    background: linear-gradient(220deg, #0f1d47, #233d8de6);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+}
+@font-face {
+  font-family: Feijoa;
+  src: url(..//font/Feijoa Display.otf);
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*common css*/
+h1 {
+  font-size: 36px;
+  color: #EEF0FB;
+  font-family: "Rubik", sans-serif;
+}
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+  color: #EEF0FB;
+  font-family: "Rubik", sans-serif;
+}
+h3 {
+  color: #4F5D80;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 41px;
+}
+p {
+  font-size: 24px;
+  font-weight: 400;
+  color: #EEF0FB;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #EEF0FB;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+ul li {
+  list-style: none;
+}
+a:hover {
+  text-decoration: none;
+  color: #EEF0FB;
+}
+.section_padding {
+  padding: 80px 0px;
+}
+/*end common css*/
+
+/*cursor css*/
+.magnet-cursor, .magnet-circle {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.magnet-cursor {
+  width: 0.35rem;
+  height: 0.35rem;
+  background-color: gray;
+  transform: translate(var(--x),var(--y));
+}
+
+.magnet-circle {
+  width: 5rem;
+  height: 5rem;
+  border: 0.5px solid gray;
+}
+
+.reset .magnet-cursor { background-color: transparent; }
+.reset .magnet-circle { display: none; }
+/*end cursor*/
+
+/*header*/
+.navbar-expand-lg .navbar-nav {
+    justify-content: center;
+}
+.navbar-nav {
+    background: rgb(63 92 177 / 25%);
+    width: 620px;
+    margin: auto;
+    padding: 12px 10px;
+    border-radius: 50px;
+}
+.navbar {
+    padding: 25px 0px;
+}
+.nav-item {
+    padding: 3px 22px;
+}
+.nav-link.active {
+    background: #EEF0FB;
+    border-radius: 20px;
+    color: #121E42 !important;
+    width: 113px;
+    text-align: center;
+}
+.nav-link {
+    font-size: 14px;
+    color: #EEF0FB;
+    line-height: 26px;
+    font-weight: 500;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #EEF0FB;
+}
+.nav-link img {
+    margin-right: 5px;
+}
+.d-flex.btn {
+    background: rgb(63,92,177);
+    background: linear-gradient(184deg, rgba(63,92,177,1) 0%, rgba(23,56,97,1) 100%);
+    padding: 20px 44px;
+    border-radius: 40px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    outline: none;
+        -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease !important;
+    transition: all .5s ease !important;
+
+}
+.header {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    z-index: 9;
+}
+.black {
+    background: linear-gradient(180deg,#0f1d47 19.27%,rgba(32,20,61,0));
+    z-index: 99999;
+     transition: opacity .83333s cubic-bezier(.53,0,.41,1);
+}
+
+/*end header*/
+/*hero area*/
+section.hero.area {
+    padding-top: 148px;
+}
+.content_hero{
+    width: 100%;
+    padding: 100px 0px;
+}
+.content_hero h1 {
+    font-weight: 500;
+    color: #EEF0FB;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+.content_hero h1 span{
+    color: #99A7E7;
+    font-family: Feijoa;
+    font-style: italic;
+    font-weight: 550;
+    line-height: 150%;
+}
+.content_hero h2{
+    margin-top: 51px;
+    color: #EEF0FB;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+.content_hero p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.286px;
+    width: 455px;
+    margin-top: 24px;
+}
+.image_box img {
+    width: 100%;
+    margin-top: 65px;
+}
+
+.circle {
+    position: relative;
+    height: 200px;
+    border-radius: 100vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*end hero ara*/
+
+/*contact me section*/
+.contact_me_section{
+    width: 100%;
+    padding: 100px 0px;
+}
+.head_title {
+    width: 540px;
+}
+.head_title h2{
+   font-family: Feijoa;Feijoa Display.otf
+    font-size: 53.474px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+.contact_me_section .row{
+    margin-top: 100px;
+}
+.contact_bbox a{
+    color: #C9D0F2;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 119%;
+    letter-spacing: 0.5px;
+}
+.contact_bbox {
+    margin-left: 35px;
+}
+.link_content {
+    padding: 0;
+    margin-top: 53px;
+}
+.link_content li a {
+    color: #C9D0F2;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    display: flex;
+}
+.link_content li {
+    width: 461px;
+    margin-bottom: 20px;
+}
+.bv_bs {
+    width: 330px !important;
+}
+.link_content li a img{
+    margin-right: 16px;
+}
+.pts img{
+    margin-left: 10px;
+}
+
+.circle {
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.logo_slider .container {
+    border-top: 1px solid #C9D0F2;
+    margin-top: 50px;
+}
+.container {
+    padding: 0;
+    overflow: hidden;
+}
+.logo_slider .row {
+    margin-top: 25px;
+}
