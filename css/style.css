@@ -46,6 +46,7 @@ p {
   font-size: 24px;
   font-weight: 400;
   color: #EEF0FB;
+  font-family: "Rubik", sans-serif;
   margin: 0;
 }
 a {
@@ -266,7 +267,7 @@ section.hero.area {
 }
 
 .circle {
-  animation: rotate 5s linear infinite;
+  animation: rotate 8s linear infinite;
 }
 
 @keyframes rotate {
