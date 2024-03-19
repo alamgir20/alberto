@@ -187,7 +187,9 @@ a.navbar-brand img {
     width: 100%;
     position: relative;
 }
-
+.image_box img{
+    display: none;
+}
 .content_hero{
     width: 100%;
     padding: 120px 0px;

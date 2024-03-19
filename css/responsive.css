@@ -320,6 +320,12 @@ a.navbar-brand img {
 .box_row_inner {
     left: 0;
 }
+.image_box img{
+    display: block;
+}
+.desh_img{
+    display: none;
+}
 }
 @media (max-width: 768px) {
 .image_box {
