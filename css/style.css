@@ -224,13 +224,38 @@ a.navbar-brand img {
 .image_box img {
     width: 100%;
 }
-
-.circle {
+.logo_slider .col{
     position: relative;
+}
+.image_icon_box{
+    position: relative;
+    text-align: center;
+}
+.circle {
+    position: absolute;
     border-radius: 100vmax;
     display: flex;
     align-items: center;
     justify-content: center;
+    top: -27%;
+    left: 6%;
+    transform: translate(-50%,-50%);
+}
+.imgw_icon {
+    margin-top: -19px;
+    margin-left: -6px;
+}
+.imgw_icon6 {
+    margin-top: -7px;
+    margin-left: -23px;
+}
+.imgw_icon4 {
+    margin-top: -7px;
+    margin-left: -23px;
+}
+.imgw_icon7 {
+    margin-top: -6px;
+    margin-left: 3px;
 }
 .content_hero b{
     font-weight: 700;

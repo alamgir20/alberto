@@ -108,6 +108,33 @@ body {
     font-size: 18px;
     line-height: 36px;
 }
+.circle img {
+    width: 120px;
+}
+.circle {
+    top: -35%;
+    left: 17%;
+}
+
+.image_icon_box img {
+    width: 70px;
+}
+.imgw_icon4 {
+    margin-top: -1px;
+    margin-left: -4px;
+}
+.imgw_icon {
+    margin-top: -1px;
+    margin-left: 5px;
+}
+.imgw_icon6 {
+    margin-top: 0px;
+    margin-left: -14px;
+}
+.imgw_icon7 {
+    margin-top: -2px;
+    margin-left: 11px;
+}
 } 
 @media (max-width: 1400px) {
 .about_content_box {
@@ -119,8 +146,15 @@ body {
 .honors_awards_section .row {
     padding: 0px 70px;
 }
+.circle {
+    top: -31%;
+    left: 12%;
+}
 }
 @media (max-width: 1024px) {
+    .desh_img {
+    display: none;
+}
 .contact_bbox {
     margin-left: 0;
 }
@@ -253,6 +287,13 @@ section.skills_section.section_padding {
     font-size: 28px;
     line-height: 20px;
 }
+.image_box img{
+    display: block;
+}
+.circle {
+    top: -21%;
+    left: 14%;
+}
 }
 @media (max-width: 991px) {
 .navbar-toggler-icon {
@@ -320,9 +361,7 @@ a.navbar-brand img {
 .box_row_inner {
     left: 0;
 }
-.image_box img{
-    display: block;
-}
+
 .desh_img{
     display: none;
 }
@@ -350,7 +389,11 @@ section.logo_slider .col {
     width: 113px;
 }
 .logo_slider .circle img {
-    width: 81px;
+    width: 94px;
+}
+.circle {
+    top: -25%;
+    left: -2%;
 }
 .hero_area .d-flex.btn {
     margin-top: 22px;
@@ -401,7 +444,6 @@ section.skills_section.section_padding {
 @media (max-width: 767px) {
 .container {
     padding: 0px 20px;
-    overflow: hidden;
 }
 a.navbar-brand img {
     width: 44px;
@@ -413,7 +455,8 @@ section.hero.area {
     padding-top: 45px;
 }
 section.logo_slider .col {
-    max-width: 128px;
+    max-width: 102px;
+    margin-top: 53px;
 }
 .circle {
     margin-bottom: 15px;
@@ -462,7 +505,17 @@ section.logo_slider .col {
     padding: 12.333px 21px;
 }
 .logo_slider .circle img {
-    width: 60px;
+    width: 92px;
+}
+.image_icon_box img {
+    width: 63px;
+}
+.circle {
+    top: -25%;
+    left: 6%;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    width: 153px;
 }
 .section_title {
     width: 100%;
@@ -530,5 +583,40 @@ section.logo_slider .col {
 }
 .text_font_bt {
     margin-bottom: 0 !important;
+}
+.icon_bpx {
+    width: 45px !important;
+}
+.honors_awards_section .section_title h2 {
+    font-size: 30px;
+}
+.image_box img {
+    width: 100%;
+}
+.company_content_box {
+    width: 100%;
+    margin-bottom: 40px;
+}
+}
+@media (max-width: 390px) {
+.logo_slider .circle img {
+    width: 75px;
+}
+.image_icon_box img {
+    width: 51px;
+}
+.circle {
+    top: -28%;
+    left: 7%;
+}
+.imgw_icon7 {
+    margin-top: 1px;
+    margin-left: -2px;
+}
+.imgw_icon {
+    margin-top: -1px;
+    margin-left: 14px;
+    position: relative;
+    left: -10px;
 }
 }
