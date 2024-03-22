@@ -135,6 +135,10 @@ body {
     margin-top: -2px;
     margin-left: 11px;
 }
+.image_box {
+    margin-top: 0px;
+    margin-left: -130px;
+}
 } 
 @media (max-width: 1400px) {
 .about_content_box {
@@ -152,9 +156,7 @@ body {
 }
 }
 @media (max-width: 1024px) {
-    .desh_img {
-    display: none;
-}
+
 .contact_bbox {
     margin-left: 0;
 }
@@ -287,19 +289,23 @@ section.skills_section.section_padding {
     font-size: 28px;
     line-height: 20px;
 }
-.image_box img{
-    display: block;
-}
+
 .circle {
     top: -21%;
     left: 14%;
+}
+.content_box_scifi a {
+    font-size: 20px;
+    line-height: 30px;
 }
 }
 @media (max-width: 991px) {
 .navbar-toggler-icon {
     background-image: url(../image/menuicon.svg);
 }
-
+.image_box img{
+    display: block;
+}
 button.navbar-toggler {
     border: none;
     outline: none;

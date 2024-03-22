@@ -33,7 +33,11 @@ body {
   font-family: Feijoa;
   src: url(..//font/Feijoa Display.otf);
 }
-
+button.btn.btn-primary {
+    background: transparent;
+    border: navajowhite;
+    padding: 0;
+}
 /*common css*/
 h1 {
   font-size: 52px;
@@ -82,33 +86,12 @@ a:hover {
 }
 /*end common css*/
 
-/*cursor css*/
-.magnet-cursor, .magnet-circle {
-  position: fixed;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  pointer-events: none;
-}
 
-.magnet-cursor {
-  width: 0.35rem;
-  height: 0.35rem;
-  background-color: gray;
-  transform: translate(var(--x),var(--y));
-}
-
-.magnet-circle {
-  width: 5rem;
-  height: 5rem;
-  border: 0.5px solid gray;
-}
-
-.reset .magnet-cursor { background-color: transparent; }
-.reset .magnet-circle { display: none; }
-/*end cursor*/
 
 /*header*/
+.daySchedule .modal-content .card-body {
+    padding: 68px !important;
+}
 .navbar-expand-lg .navbar-nav {
     justify-content: center;
 }
@@ -117,6 +100,9 @@ a:hover {
     margin: auto;
     padding: 12px 10px;
     border-radius: 50px;
+}
+.image_box img{
+    display: none;
 }
 .navbar {
     padding: 25px 0px;
@@ -138,9 +124,12 @@ a.navbar-brand img {
     padding: 7px 21.333px;
     justify-content: center;
     align-items: center;
+    transition: 0.5s;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 13px 24px;
+    border-radius: 32px;
+    transition: 0.5s;
 }
 .nav-link {
     font-size: 14px;
@@ -182,13 +171,14 @@ a.navbar-brand img {
 }
 /*end header*/
 /*hero area*/
+.daySchedule .modal-content {
+    top: 128px ;
+}
 .hero_area {
     padding-top: 148px;
     width: 100%;
     position: relative;
-}
-.image_box img{
-    display: none;
+    overflow: hidden;
 }
 .content_hero{
     width: 100%;
@@ -593,7 +583,10 @@ section.skills_section.section_padding {
     text-align: center;
     margin-bottom: 25px;
 }
-.content_box_scifi p{
+.content_box_scifi {
+    padding: 28px 0px;
+}
+.content_box_scifi a{
     color: #C9D0F2;
     font-size: 24px;
     font-style: normal;
